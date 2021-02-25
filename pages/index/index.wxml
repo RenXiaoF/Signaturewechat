@@ -1,0 +1,13 @@
+<view class="sign">
+  <view class="signTitle">请签下你的名字</view>
+  <view class="paper">
+    <canvas class="handWriting" disable-scroll="true" bindtouchstart="touchstart1" bindtouchmove="touchmove1" canvas-id="handWriting1"></canvas>
+  </view>
+  <view class="signBtn">
+    <button size="" type="primary" bindtap="sign1ok">完成签字</button>
+    <button size="" type="warn" bindtap="reSign1">重新签字</button>
+  </view>
+</view>
+<view class="image" hidden="{{src?false:true}}">
+  <image src="{{src}}"></image>
+</view>
